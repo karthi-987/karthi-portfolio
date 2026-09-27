@@ -1,11 +1,11 @@
-import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import {Home, About, Projects, Contact} from './pages';
 
 const App = () => {
   return (
     <main className = "bg-slate-300/20 h-full">
-        <Router>
+        <Router basename="/karthi-portfolio">
             <Navbar />
             <Routes>
                 <Route path = "/" element = {<Home />} />
